@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.main_div {
+  margin: 0 auto;
+  width: 1000px;
+  padding: 0 55px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  font-family: Arial;
+  font-size: 28.5px;
+  color: #707070;
+  padding-top: 20px;
+}
+
+.header span {
+  color: black;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+/*End header*/
+
+/* контент */
+.main {
+  position: relative;
+  border: 1px solid #a1a1a1;
+  padding: 0 90px;
+}
+
+/* Заголовок контента */
+.main_h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.main_h1 h1 {
+  display: inline;
+  font-size: 74.99px;
+  font-weight: bold;
+  color: #3583b0;
+  border-bottom: 1px solid #3583b0;
+  margin-bottom: 61px;
+}
+
+/* Конец заголовок контента */
+
+/* контент верх */
+.content_top {
+  display: flex;
+  justify-content: space-between;
+  width: 705px;
+  margin: auto;
+}
+
+/* Слайдер */
+.slider_main {
+  width: 306px;
+  margin-bottom: 40px;
+}
+
+.slider_mini {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* конец слайдера */
+
+/* описание товара справа */
+.description_right {
+  width: 345px;
+}
+
+.description_right li {
+  list-style-type: none;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.description_right ul {
+  padding: 0;
+}
+
+.description_right_h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  border-bottom: 1px solid #959595;
+}
+
+/* конец описание товара справа*/
+
+/* Краткое описание товара */
+.description_bottom {
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.p_description_bottom {
+  font-size: 18px;
+}
+
+/* конец краткого описания товара */
+/* Скидка */
+.sale {
+  position: absolute;
+  top: 80px;
+  left: 70px;
+  border-radius: 50%;
+  width: 172px;
+  height: 172px;
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.p_sale {
+  color: #ffffff;
+  text-align: center;
+  font-size: 38.57px;
+}
+
+/* конец скидки */
+
+/* Футер */
+.footer {
+  font-size: 15.44px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.footer li {
+  list-style-type: none;
+  font-size: 15.44px;
+}
+
+.footer ul {
+  padding: 0;
+}
+
+/* Кінець футера */
