@@ -102,6 +102,8 @@ body {
 
 /* Краткое описание товара */
 .description_bottom {
+  /*overflow: auto;*/
+  word-wrap: break-word;
   margin-top: 90px;
   margin-bottom: 50px;
 }
