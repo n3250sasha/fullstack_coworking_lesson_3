@@ -192,7 +192,7 @@ body {
 
 /* плавна анімація */
 .slider_down {
-  transition-duration: .4s
+  transition-duration: .4s;
 }
 
 /* при наведенні на блок з скидкою поворот на 30 градусів */
