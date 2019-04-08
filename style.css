@@ -203,7 +203,7 @@ body {
 /* закінчення ефектыв при наведенні hover */
 
 /*Адаптація для розширення від 320 до 450 px*/
-@media screen and (max-width: 450px) and (min-width: 300px) {
+@media screen and (max-width: 500px) and (min-width: 300px) {
   html {
     font-size: 7.5px;
   }
