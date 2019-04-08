@@ -181,6 +181,7 @@ body {
 /* збільшення головної картиник при наведенні */
 .slider_main:hover {
   transform: scale(1.03, 1.03);
+  cursor: pointer;
 }
 
 /* збільшення картинок слайдера при наведенні */
@@ -189,6 +190,7 @@ body {
 .slider_down_3:hover,
 .slider_down_4:hover {
   transform: scale(1.2, 1.2);
+  cursor: pointer;
 }
 
 /* плавна анімація */
