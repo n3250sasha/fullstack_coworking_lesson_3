@@ -1,3 +1,20 @@
+/* для псевдоелементів */
+*:after,
+*:before,
+  /* * - для всього */
+* {
+  /*для того, щоб padding не впливали на ширину блока !!!! */
+  box-sizing: border-box;
+}
+
+html {
+  /* встановлюється розмір шрифта 62.5% для того,
+   щоб 1.5rem = 15px і т.д. */
+  /* 75px / 10 = 7.5rem
+  1rem = 10px*/
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   font-family: Arial;
@@ -6,7 +23,7 @@ body {
 .main_div {
   margin: 0 auto;
   width: 1000px;
-  padding: 0 55px;
+  padding: 0;
 }
 
 /* Header */
@@ -16,7 +33,7 @@ body {
   padding-top: 40px;
   padding-bottom: 25px;
   font-family: Arial;
-  font-size: 28.5px;
+  font-size: 2.85rem; /* 28.5px */
   color: #707070;
   padding-top: 20px;
 }
@@ -44,7 +61,7 @@ body {
 
 .main_h1 h1 {
   display: inline;
-  font-size: 74.99px;
+  font-size: 7.5rem; /* 75px / 10 = 7.5rem */
   font-weight: bold;
   color: #3583b0;
   border-bottom: 1px solid #3583b0;
@@ -56,15 +73,25 @@ body {
 /* контент верх */
 .content_top {
   display: flex;
+  position: relative;
   justify-content: space-between;
-  width: 705px;
   margin: auto;
 }
 
 /* Слайдер */
+.conten_slider {
+  width: 50%;
+  padding-right: 35px;
+}
+
 .slider_main {
-  width: 306px;
   margin-bottom: 40px;
+  transition-duration: .4s
+}
+
+.slider_main img {
+  width: 100%;
+  height: auto;
 }
 
 .slider_mini {
@@ -76,12 +103,12 @@ body {
 
 /* описание товара справа */
 .description_right {
-  width: 345px;
+  width: 50%;
 }
 
 .description_right li {
   list-style-type: none;
-  font-size: 18px;
+  font-size: 1.8rem;
   margin-bottom: 7px;
 }
 
@@ -92,7 +119,7 @@ body {
 .description_right_h2 {
   margin: 0;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
   color: #000000;
   border-bottom: 1px solid #959595;
@@ -109,39 +136,39 @@ body {
 }
 
 .p_description_bottom {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 /* конец краткого описания товара */
 /* Скидка */
 .sale {
   position: absolute;
-  top: 80px;
-  left: 70px;
+  top: -18%;
+  left: -4%;
   border-radius: 50%;
-  width: 172px;
-  height: 172px;
+  width: 175px;
+  height: 175px;
   background-color: rgba(255, 0, 0, 0.4);
 }
 
 .p_sale {
   color: #ffffff;
   text-align: center;
-  font-size: 38.57px;
+  font-size: 3.8rem;
 }
 
 /* конец скидки */
 
 /* Футер */
 .footer {
-  font-size: 15.44px;
+  font-size: 1.5rem;
   margin-top: 25px;
   margin-bottom: 10px;
 }
 
 .footer li {
   list-style-type: none;
-  font-size: 15.44px;
+  font-size: 1.5rem;
 }
 
 .footer ul {
@@ -149,3 +176,113 @@ body {
 }
 
 /* Кінець футера */
+
+/* Ефекти при наведенні миші hover */
+/* збільшення головної картиник при наведенні */
+.slider_main:hover {
+  transform: scale(1.03, 1.03);
+}
+
+/* збільшення картинок слайдера при наведенні */
+.slider_down_1:hover,
+.slider_down_2:hover,
+.slider_down_3:hover,
+.slider_down_4:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/* плавна анімація */
+.slider_down_1,
+.slider_down_2,
+.slider_down_3,
+.slider_down_4 {
+  transition-duration: .4s
+}
+
+/* при наведенні на блок з скидкою поворот на 30 градусів */
+.sale:hover {
+  transform: rotate(-30deg);
+}
+
+/* закінчення ефектыв при наведенні hover */
+
+/*Адаптація для розширення від 320 до 450 px*/
+@media screen and (max-width: 450px) and (min-width: 300px) {
+  html {
+    font-size: 7.5px;
+  }
+
+  /*отступи блока*/
+  .main {
+    padding: 10px;
+  }
+
+  /* ширина головного блоку 100%  з падінгами*/
+  .main_div {
+    max-width: 100%;
+    padding: 0 7px;
+  }
+
+  /* робимо блок блочним :-) */
+  .content_top {
+    display: block;
+  }
+
+  /* опис товара робимо шириною 100% */
+  .description_right {
+    width: 100%;
+    margin: 10px auto 0;
+  }
+
+  /* велика картинка по центру */
+  .slider_main {
+    margin: 0 auto 10px;
+    padding: 0 20%;
+  }
+
+  .description_bottom {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .conten_slider {
+    width: auto;
+    padding-right: 0;
+  }
+
+  /* розмір заголовка */
+  .main_h1 h1 {
+    margin: 0 10px 10px;
+    font-size: 6.5rem;
+    text-align: center;
+  }
+
+  /* розмір тексту в хедері */
+  .header {
+    padding-bottom: 5px;
+    font-size: 1.7rem;
+    padding-top: 5px;
+  }
+
+  /* блок скидки */
+  .sale {
+    top: 0%;
+    left: 5%;
+    width: 90px;
+    height: 90px;
+  }
+
+  /* розмір тесту скидки */
+  .p_sale {
+    font-size: 2.8em;
+  }
+
+  .header span {
+    margin-left: 5px;
+  }
+
+  .footer {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
