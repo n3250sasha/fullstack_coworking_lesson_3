@@ -185,19 +185,13 @@ body {
 }
 
 /* збільшення картинок слайдера при наведенні */
-.slider_down_1:hover,
-.slider_down_2:hover,
-.slider_down_3:hover,
-.slider_down_4:hover {
+.slider_down:hover {
   transform: scale(1.2, 1.2);
   cursor: pointer;
 }
 
 /* плавна анімація */
-.slider_down_1,
-.slider_down_2,
-.slider_down_3,
-.slider_down_4 {
+.slider_down {
   transition-duration: .4s
 }
 
